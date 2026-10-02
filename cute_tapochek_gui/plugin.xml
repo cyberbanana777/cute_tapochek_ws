@@ -1,0 +1,13 @@
+<library path="src">
+  <class name="MotionStudio" type="cute_tapochek_gui.motion_studio.MotionStudio" base_class_type="rqt_gui_py::Plugin">
+    <description>Record, preview, save and play motions of the cute_tapochek robot</description>
+    <qtgui>
+      <group>
+        <label>Cute Tapochek</label>
+      </group>
+      <label>Motion Studio</label>
+      <icon type="theme">media-record</icon>
+      <statustip>Record and play SO-ARM101 motions through motion_server</statustip>
+    </qtgui>
+  </class>
+</library>

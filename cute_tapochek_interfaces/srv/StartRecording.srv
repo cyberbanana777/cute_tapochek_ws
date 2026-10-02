@@ -1,0 +1,5 @@
+bool start_on_motion     # wait until the leader starts moving
+float64 max_duration     # s, 0 -> server default
+---
+bool success
+string message

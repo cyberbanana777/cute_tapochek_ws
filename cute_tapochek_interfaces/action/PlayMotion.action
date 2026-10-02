@@ -1,0 +1,14 @@
+# Play a motion from the library (or the last unsaved recording).
+# A new goal preempts the one currently playing.
+
+string name              # motion name in the library
+bool play_draft          # true: play the last unsaved recording, `name` is ignored
+float64 speed            # playback speed multiplier, 0 -> 1.0
+float64 approach_time    # s, move to the first pose; 0 -> server default
+---
+bool success
+string message
+---
+float64 progress         # 0..1
+float64 elapsed          # s since trajectory start
+float64 total            # s, approach + motion

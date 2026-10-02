@@ -1,0 +1,7 @@
+# Save the last recording (draft) to the library under `name`.
+string name              # [A-Za-z0-9_-], up to 64 chars
+string description
+bool overwrite
+---
+bool success
+string message
