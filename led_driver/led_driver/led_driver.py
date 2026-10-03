@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """ROS2-нода для прошивки led_driver (режимы и яркость ленты по Serial).
 
-Топики (относительно имени ноды, по умолчанию /led_selector/...):
+Топики (относительно имени ноды, по умолчанию /led_driver/...):
   ~/mode              std_msgs/String  (подписка) название или номер режима:
                                        "rainbow", "dot", "azure", "green", "orange", "off"
                                        или "1".."6"

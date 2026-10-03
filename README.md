@@ -29,7 +29,7 @@
                                         └──/arm_relay/set_enabled──► телеуправление (soarm101)
                                             /gripper_relay/set_enabled
 
- любой узел ──/led_selector/mode, /brightness──► led_driver ══USB Serial══► плата ──► лента WS2812B
+ любой узел ──/led_driver/mode, /brightness──► led_driver ══USB Serial══► плата ──► лента WS2812B
 ```
 
 - `motion_server` владеет библиотекой движений. Все действия с ней (запись, сохранение, проигрывание, удаление) выполняются через его сервисы и action, поэтому GUI, терминал и автомат поведения работают одинаково.
@@ -79,8 +79,8 @@ ros2 action send_goal /play_motion cute_tapochek_interfaces/action/PlayMotion "{
 
 ```bash
 ros2 run led_driver led_driver --ros-args -p port:=/dev/ttyUSB0
-ros2 topic pub --once /led_selector/mode std_msgs/msg/String "{data: green}"
-ros2 topic pub --once /led_selector/brightness std_msgs/msg/UInt8 "{data: 150}"
+ros2 topic pub --once /led_driver/mode std_msgs/msg/String "{data: green}"
+ros2 topic pub --once /led_driver/brightness std_msgs/msg/UInt8 "{data: 150}"
 ```
 
 ## Протокол управления светодиодной лентой

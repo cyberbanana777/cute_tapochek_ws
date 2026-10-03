@@ -136,4 +136,6 @@ If the node cannot reach the board, test the board without ROS: open the Arduino
 
 ## Version
 
+**0.1.1** — changed names of topics. 
+
 **0.1.0** — first version: strip modes and brightness, latched state topics, command retries on link errors.

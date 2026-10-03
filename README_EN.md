@@ -29,7 +29,7 @@ The repository is a set of ROS 2 packages plus microcontroller firmware. The arm
                                          └──/arm_relay/set_enabled──► teleoperation (soarm101)
                                              /gripper_relay/set_enabled
 
- any node ──/led_selector/mode, /brightness──► led_driver ══USB serial══► board ──► WS2812B strip
+ any node ──/led_driver/mode, /brightness──► led_driver ══USB serial══► board ──► WS2812B strip
 ```
 
 - `motion_server` owns the motion library. Everything done with it (recording, saving, playback, deletion) goes through its services and action, so the GUI, the terminal and a behaviour state machine all work the same way.
@@ -79,8 +79,8 @@ ros2 action send_goal /play_motion cute_tapochek_interfaces/action/PlayMotion "{
 
 ```bash
 ros2 run led_driver led_driver --ros-args -p port:=/dev/ttyUSB0
-ros2 topic pub --once /led_selector/mode std_msgs/msg/String "{data: green}"
-ros2 topic pub --once /led_selector/brightness std_msgs/msg/UInt8 "{data: 150}"
+ros2 topic pub --once /led_driver/mode std_msgs/msg/String "{data: green}"
+ros2 topic pub --once /led_driver/brightness std_msgs/msg/UInt8 "{data: 150}"
 ```
 
 ## LED strip control protocol

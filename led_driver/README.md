@@ -136,4 +136,6 @@ ros2 topic echo --qos-durability transient_local /led_driver/brightness_state
 
 ## Версия
 
+**0.1.1** — изменены имена топиков. 
+
 **0.1.0** — первая версия: режимы и яркость ленты, latched-топики состояния, повтор команд при сбоях связи.
