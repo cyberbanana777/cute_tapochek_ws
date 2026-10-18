@@ -211,3 +211,8 @@ Each motion is a separate file `motions/<name>.csv`: time in seconds, joint posi
 ## Authors and license
 
 Alice Zenina and Alexander Grachev, RTU MIREA. MIT license.
+
+
+
+
+moody@moody-Sword-17-A11UD:~$ ros2 run rqt_joint_trajectory_controller rqt_joint_trajectory_controller --ros-args -r robot_description:='/follower/robot_description'

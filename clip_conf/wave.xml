@@ -1,0 +1,5 @@
+<clip name="wave">
+    <motion name="wave"/>
+    <voice group="wave"/>
+    <led mode="azure"/>
+</clip>

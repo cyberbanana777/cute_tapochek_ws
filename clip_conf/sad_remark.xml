@@ -1,0 +1,5 @@
+<clip name="sad_remark">
+    <motion name="sad_remark"/>
+    <voice group="sad_phrases"/>
+    <led mode="azure"/>
+</clip>

@@ -211,3 +211,4 @@ OK RAINBOW 80
 ## Авторы и лицензия
 
 Alice Zenina и Alexander Grachev, РТУ МИРЭА. Лицензия MIT.
+
